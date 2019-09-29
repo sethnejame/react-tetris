@@ -8,5 +8,5 @@ const Cell = ({ type }) => {
       cell
     </StyledCell>
   );
-};
+}; 
 export default Cell;
