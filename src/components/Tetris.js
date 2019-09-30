@@ -22,7 +22,12 @@ const Tetris = ({ type }) => {
   console.log("re-render");
 
   // functions for player movement
-  const movePlayer = dir => {};
+  const movePlayer = dir => {
+    updatePlayerPos({
+      x: dir,
+      y: 0
+    });
+  };
 
   const startGame = () => {
     // Reset everything
@@ -64,7 +69,7 @@ const Tetris = ({ type }) => {
               <Display text="Level" />
             </div>
           )}
-          <StartButton onClick={startGame}/>
+          <StartButton onClick={startGame} />
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>
