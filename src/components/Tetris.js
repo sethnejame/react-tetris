@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createStage } from "../gameHelpers";
 
 // Components
 import Stage from "./Stage";
@@ -14,11 +15,29 @@ import { StyledTetris, StyledTetrisWrapper } from "./styles/StyledTetris";
 
 const Tetris = ({ type }) => {
   const [dropTime, setDropTime] = useState(null); // toggle the speed of the dropping tetrominos here
-  const [gameOver, setGameOver] = useStage(false); // toggle true/false for game status
+  const [gameOver, setGameOver] = useState(false); // toggle true/false for game status
   const [player] = usePlayer(); // pull in player object from custom hook
   const [stage, setStage] = useStage(); // pull in stage object from custom hook
 
   console.log("re-render");
+
+  // functions for player movement
+  const movePlayer = e => {
+
+  }
+
+  const startGame = () => {
+
+  }
+
+  const drop = () => {
+
+  }
+
+  const dropPlayer = () => {
+    
+  }
+
   return (
     <StyledTetrisWrapper>
       <StyledTetris>
